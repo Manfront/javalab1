@@ -1,0 +1,35 @@
+package prgram1;
+import java.util.*;
+public class prgram1 
+{
+public static void main(String[] args)
+{
+// Create an array list
+ArrayList<Integer> list = new ArrayList<Integer>( );
+ArrayList<Integer> list1 = new ArrayList<Integer>( );
+// Add elements to array list
+list.add(30);
+list.add(20);
+list.add(10);
+list.add(40);
+// Display the array list
+System.out.println("ArrayList: " + list);
+// Remove an element from array list
+list.remove(2);
+System.out.println("Updated ArrayList: " + list);
+// Access the element 
+int element = list.get(1);
+System.out.println("Accessed Element: " + element);
+System.out.print("Iterating over ArrayList: ");
+// Access the element by iteration
+for (int i = 0; i < list.size(); i++) 
+System.out.print(list.get(i) + " ");
+System.out.println("Before sorting:" +list);
+// Sorting the list
+Collections.sort(list);
+System.out.println("After sorting:" +list);
+//toarray method
+Object[] arr= list.toArray();
+System.out.println("Elements of Arraylist:" +"as Array:" + Arrays.toString(arr));
+}
+}
